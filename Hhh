@@ -1,0 +1,22 @@
+local Library = loadstring(Game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
+
+local PhantomForcesWindow = Library:NewWindow("Build & Survive")
+
+local KillingCheats = PhantomForcesWindow:NewSection("main")
+
+-- Tạo nút "add money"
+KillingCheats:CreateButton("add money", function()
+    for i = 1, 10000 do
+        game:GetService("ReplicatedStorage").InvitePlayer:FireServer()
+    end
+    print("HI")
+end)
+
+-- Tạo mục mới "By Create giang_lao889"
+local GiangLaoSection = PhantomForcesWindow:NewSection("By Create giang_lao889")
+
+-- Tạo nút "By Create giang_lao889" trong mục mới
+GiangLaoSection:CreateButton("By Create giang_lao889", function()
+    -- Thực hiện hành động khi nhấn nút này
+    print("Nút 'By Create giang_lao889' được nhấn bởi giang_lao889")
+end)
